@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bitz</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joe Samela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- chrome theme color -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start">
+        <div>
+            <div class="section">
+                <h1>BITZ</h1>
+                <!-- <p>A game for stroke patients to practice eye exercises!</p> -->
+                <p>Press SPACEBAR to generate a random gameboard!</p>
+            </div>
+
+            <div class="section">
+                <h2>Difficulty</h2>
+                <button class="grid-button" onClick="setgriddimensions(2,3)">2x3</button>
+                <button class="grid-button" onClick="setgriddimensions(3,4)">3x4</button>
+                <button class="grid-button" onClick="setgriddimensions(4,5)">4x5</button>
+                <button class="grid-button" onClick="setgriddimensions(5,6)">5x6</button>
+            </div>
+
+            <div class="section">
+                <h2>Colors</h2>
+                <button class="color-button wob" onClick="setThemeWhiteonBlack()">White-on-Black</button>
+                <button class="color-button bow" onClick="setThemeBlackonWhite()">Black-on-White</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game">
+        <div id="gameboard"></div>
+    </div>
+</body>
+
+<script src="main.js"></script>
