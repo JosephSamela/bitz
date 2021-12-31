@@ -6,7 +6,7 @@ const game = document.getElementById("game")
 const gameboard = document.getElementById("gameboard")
 const score = document.getElementById("score")
 
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYYZ'
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ '
 
 var gamemode = 'upper' // options are 'upper', 'lower' and 'upperandlower'
 var rows = 3
