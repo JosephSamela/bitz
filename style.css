@@ -112,7 +112,6 @@ h2 {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     /* position */
     height: 80vh;
-    padding: 1em;
 }
 
 #gamebeforetext {
