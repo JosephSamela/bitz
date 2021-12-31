@@ -19,33 +19,31 @@
 </head>
 
 <body>
-    <div id="start">
-        <div>
-            <div class="section">
-                <h1>BITZ</h1>
-                <!-- <p>A game for stroke patients to practice eye exercises!</p> -->
-                <p>Press SPACEBAR to generate a random gameboard!</p>
-            </div>
 
-            <div class="section">
-                <h2>Difficulty</h2>
-                <button class="grid-button" onClick="setgriddimensions(2,3)">2x3</button>
-                <button class="grid-button" onClick="setgriddimensions(3,4)">3x4</button>
-                <button class="grid-button" onClick="setgriddimensions(4,5)">4x5</button>
-                <button class="grid-button" onClick="setgriddimensions(5,6)">5x6</button>
-            </div>
-
-            <div class="section">
-                <h2>Colors</h2>
-                <button class="color-button wob" onClick="setThemeWhiteonBlack()">White-on-Black</button>
-                <button class="color-button bow" onClick="setThemeBlackonWhite()">Black-on-White</button>
-            </div>
-        </div>
+    <div class="section">
+        <h1>BITZ</h1>
+        <p>Games for stroke patients to practice vision therapy exercises.</p>
     </div>
 
-    <div id="game">
-        <div id="gameboard"></div>
+    <div class="section">
+        <h2>Letter Search</h2>
+        <p>Player completes challenges to identify letters in a grid.</p>
+        <br>
+        <a href="./letter-search.html">
+            <button class="button mode-button">PLAY</button>
+        </a>
     </div>
+
+    <div class="section">
+        <h2>Alphabet Scramble</h2>
+        <p>
+            The alphabet is scrambled!
+            <br>Player finds each letter in alphabetical order.
+        </p>
+        <br>
+        <a href="./alphabet-scramble.html">
+            <button class="button mode-button">PLAY</button>
+        </a>
+    </div>
+
 </body>
-
-<script src="main.js"></script>
